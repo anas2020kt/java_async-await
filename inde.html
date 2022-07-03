@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body>
+    <script>
+        const Promise1 = new Promise((resolve,reject) => {
+            resolve(["Javascript", "java"]);
+        });
+
+        // Promise1
+        // .then((res) => {
+        //     console.log(res);
+
+        // })
+        // .catch((reject) => {
+        //     console.log(reject);
+        // });
+
+        async function fatchData() {
+            const response = await Promise1;
+            console.log(response);
+        }
+        fatchData();
+    </script>
+</body>
+</html>
